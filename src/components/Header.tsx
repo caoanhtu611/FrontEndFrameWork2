@@ -6,89 +6,156 @@ type Props = {
 const Header = ({ menu }: Props) => {
   return (
     <div>
-      <header className="" style={{ marginBottom: "30px" }}>
-        <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
-          <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-            <a href="https://flowbite.com" className="flex items-center">
-              <img
-                src="https://flowbite.com/docs/images/logo.svg"
-                className="mr-3 h-6 sm:h-9"
-                alt="Flowbite Logo"
-              />
-              <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-                Cao Anh Tú
-              </span>
-            </a>
-            <div className="flex items-center lg:order-2">
+      <nav
+        className="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block"
+        id="templatemo_nav_top"
+      >
+        <div className="container text-light">
+          <div className="w-100 d-flex justify-content-between">
+            <div>
+              <i className="fa fa-envelope mx-2" />
               <a
-                href="#"
-                className="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
+                className="navbar-sm-brand text-light text-decoration-none"
+                href="mailto:info@company.com"
               >
-                Log in
+                info@company.com
               </a>
+              <i className="fa fa-phone mx-2" />
               <a
-                href="#"
-                className="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+                className="navbar-sm-brand text-light text-decoration-none"
+                href="tel:010-020-0340"
               >
-                Get started
+                010-020-0340
               </a>
-              <button
-                data-collapse-toggle="mobile-menu-2"
-                type="button"
-                className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                aria-controls="mobile-menu-2"
-                aria-expanded="false"
-              >
-                <span className="sr-only">Open main menu</span>
-                <svg
-                  className="w-6 h-6"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-                <svg
-                  className="hidden w-6 h-6"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </button>
             </div>
-            <div
-              className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
-              id="mobile-menu-2"
-            >
-              <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-                {menu.map((item) => {
-                  return (
-                    <li>
-                      <a
-                        href="#"
-                        className="block py-2 pr-4 pl-3 text-black rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
-                        aria-current="page"
-                      >
-                        {item}
-                      </a>
-                    </li>
-                  );
-                })}
-              </ul>
+            <div>
+              <a
+                className="text-light"
+                href="https://fb.com/templatemo"
+                target="_blank"
+                rel="sponsored"
+              >
+                <i className="fab fa-facebook-f fa-sm fa-fw me-2" />
+              </a>
+              <a
+                className="text-light"
+                href="https://www.instagram.com/"
+                target="_blank"
+              >
+                <i className="fab fa-instagram fa-sm fa-fw me-2" />
+              </a>
+              <a
+                className="text-light"
+                href="https://twitter.com/"
+                target="_blank"
+              >
+                <i className="fab fa-twitter fa-sm fa-fw me-2" />
+              </a>
+              <a
+                className="text-light"
+                href="https://www.linkedin.com/"
+                target="_blank"
+              >
+                <i className="fab fa-linkedin fa-sm fa-fw" />
+              </a>
             </div>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
+
+      <nav className="navbar navbar-expand-lg navbar-light shadow">
+        <div className="container d-flex justify-content-between align-items-center">
+          <a
+            className="navbar-brand text-success logo h1 align-self-center"
+            href="index.html"
+          >
+            Zay
+          </a>
+
+          <button
+            className="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#templatemo_main_nav"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            className="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
+            id="templatemo_main_nav"
+          >
+            <div className="flex-fill">
+              <ul className="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                <li className="nav-item">
+                  <a className="nav-link" href="index.html">
+                    Home
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="about.html">
+                    About
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="shop.html">
+                    Shop
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="contact.html">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="navbar align-self-center d-flex">
+              <div className="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                <div className="input-group">
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="inputMobileSearch"
+                    placeholder="Search ..."
+                  />
+                  <div className="input-group-text">
+                    <i className="fa fa-fw fa-search"></i>
+                  </div>
+                </div>
+              </div>
+              <a
+                className="nav-icon d-none d-lg-inline"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#templatemo_search"
+              >
+                <i className="fa fa-fw fa-search text-dark mr-2"></i>
+              </a>
+              <a
+                className="nav-icon position-relative text-decoration-none"
+                href="#"
+              >
+                <i className="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                <span className="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">
+                  7
+                </span>
+              </a>
+              <a
+                className="nav-icon position-relative text-decoration-none"
+                href="#"
+              >
+                <i className="fa fa-fw fa-user text-dark mr-3"></i>
+                <span className="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">
+                  +99
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </div>
   );
 };

@@ -2,7 +2,7 @@
   "product": [
     {
       "id": "1",
-      "image": "https://th.bing.com/th/id/OIP.x2IRsb5BhINcmE2Vj37aZAHaFJ?w=288&h=200&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "image": "http://127.0.0.1:5500/assets/img/feature_prod_01.jpg",
       "title": "Sản Phẩm 1",
       "price": "10$",
       "desc": "Quá Đẳng Cấp",
@@ -10,7 +10,7 @@
     },
     {
       "id": "2",
-      "image": "https://th.bing.com/th/id/OIP.6D9FNDUNbYiDWlOnJOCZEwHaHa?w=200&h=200&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "image": "http://127.0.0.1:5500/assets/img/feature_prod_02.jpg",
       "title": "Sản Phẩm 1",
       "price": "10$",
       "desc": "Quá Đẳng Cấp",
@@ -18,7 +18,7 @@
     },
     {
       "id": "3",
-      "image": "https://th.bing.com/th/id/OIP.HLq4zcQVoU2J4-Ge5erl1gHaFN?w=296&h=208&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "image": "http://127.0.0.1:5500/assets/img/feature_prod_03.jpg",
       "title": "Sản Phẩm 1",
       "price": "10$",
       "desc": "Quá Đẳng Cấp",

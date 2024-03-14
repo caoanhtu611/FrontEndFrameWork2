@@ -5,6 +5,7 @@ import ProductList from "./pages/client/productList/ProductList";
 import HomePage from "./pages/client/home/HomePage";
 import { useState } from "react";
 import Slider from "./components/Slider";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
