@@ -90,26 +90,15 @@ const Header = ({ menu }: Props) => {
           >
             <div className="flex-fill">
               <ul className="nav navbar-nav d-flex justify-content-between mx-lg-auto">
-                <li className="nav-item">
-                  <a className="nav-link" href="index.html">
-                    Home
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="about.html">
-                    About
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="shop.html">
-                    Shop
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="contact.html">
-                    Contact
-                  </a>
-                </li>
+                {menu.map((item) => {
+                  return (
+                    <li className="nav-item">
+                      <a className="nav-link" href="index.html">
+                        {item}
+                      </a>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
             <div className="navbar align-self-center d-flex">
